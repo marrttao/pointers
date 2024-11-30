@@ -10,6 +10,9 @@ int main() {
 	*b = *a - *b;
 	*a = *a - *b;
 	cout << *a << "\t" << *b << endl;
+	if (a != nullptr & b != nullptr) {
+		delete a, b;
+	}
 	delete a, b;
 	return 0;
 }
