@@ -29,7 +29,10 @@ int main()
 
     cout << "Sum of array elements: " << sum << endl;
 
-	if (arr != nullptr)
-		delete[] arr;
+    if (arr != nullptr)
+    {
+        delete[] arr; 
+    }
+		
     return 0;
 }
